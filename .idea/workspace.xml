@@ -2,54 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="438b244a-1c68-44d7-a04b-b635029b735d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-02-10-welcome-to-jekyll.markdown" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-02-12-create-my-blog-with-jekyll.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-03-21-teach-girlfriend-html-css.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-03-26-sublimeLinter.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-04-06-arrays-similar.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-04-12-Syncing-a-fork.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-04-15-baidu-ife-1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-04-22-baidu-ife-2-javascript.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-05-18-front-end-tools.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-05-20-scope.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-06-01-lenovo-front-end-interview.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-06-11-JavaScript-function.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-06-12-JavaScript-this.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-06-14-JavaScript-closure.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-06-15-JavaScript-Object-Oriented.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-06-17-web-app.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-06-18-weinre.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-07-09-JavaScript-Net.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-07-24-low-IE-click-empty-block-bug.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-12-31-History-API.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-03-12-jekyll-theme-version-2.0.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-05-06-regular-expression-group.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-06-07-JavaScript-good-parts-note1.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-06-08-JavaScript-good-parts-note2.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-06-10-JavaScript-good-parts-note3.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-06-14-how-to-use-babel.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-07-07-git-clone-not-master-branch.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-10-16-shuffle-algorithm.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-11-22-js-create-file-and-download.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2016-11-25-how-to-write-a-count-down.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-12-04-test-my-webapp.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-12-07-git-push-github.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-12-07-test-my-webapp.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-12-13-Ubuntu16.04-pycharm-icon-setting.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2018-01-04-scrapy-setup-in-win.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2018-01-09-python_crawl_words.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2018-01-13-close-win10-update.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2018-01-13-setup-mysql-inubuntu.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2018-02-01-about-inner-outer-ip.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2018-02-10-centos-crontab.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2018-09-30-muke-courses.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_config.yml" afterPath="$PROJECT_DIR$/_config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/footer.html" afterPath="$PROJECT_DIR$/_includes/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/3collections.md" afterPath="$PROJECT_DIR$/page/3collections.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/3demo.html" afterPath="$PROJECT_DIR$/page/3demo.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/page/4about.md" afterPath="$PROJECT_DIR$/page/4about.md" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README-zh-cn.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,11 +18,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="footer.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/footer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+            <state relative-caret-position="534">
+              <caret line="27" column="116" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="116" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,6 +68,7 @@
         <option value="$PROJECT_DIR$/page/3demo.html" />
         <option value="$PROJECT_DIR$/page/4about.md" />
         <option value="$PROJECT_DIR$/_includes/footer.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -145,20 +110,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mdily.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mdily.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mdily.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -271,12 +222,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542031325347</updated>
-      <workItem from="1542031327233" duration="4155000" />
+      <workItem from="1542031327233" duration="4313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4155000" />
+    <option name="totallyTimeSpent" value="4313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="977" extended-state="6" />
@@ -322,14 +273,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CNAME">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -470,41 +413,41 @@
         <state relative-caret-position="429">
           <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
           <folding>
-            <marker date="1542113569534" expanded="true" signature="1059:3240" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1076:3225" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1097:1293" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1166:1271" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1357:1573" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1427:1547" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1657:1876" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1728:1850" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="1960:2165" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="2026:2139" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="2249:2472" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="2322:2446" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="2556:2762" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="2623:2736" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="2846:3055" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="2914:3029" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="3305:5377" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="3328:3457" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="3434:3457" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5031:5074" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5031:5093" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5031:5359" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5031:5370" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5112:5342" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5549:6687" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5577:6677" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5610:5649" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="5677:6071" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="6302:6666" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="6321:6504" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="6523:6653" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="6812:6918" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="6844:6911" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="7084:7363" ph="..." />
-            <marker date="1542113569534" expanded="true" signature="7110:7348" ph="{&quot;easing&quot;: 'easeInOutCubic'...}" />
+            <marker date="1542113660503" expanded="true" signature="1059:3240" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1076:3225" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1097:1293" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1166:1271" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1357:1573" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1427:1547" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1657:1876" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1728:1850" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="1960:2165" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="2026:2139" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="2249:2472" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="2322:2446" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="2556:2762" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="2623:2736" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="2846:3055" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="2914:3029" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="3305:5377" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="3328:3457" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="3434:3457" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5031:5074" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5031:5093" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5031:5359" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5031:5370" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5112:5342" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5549:6695" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5577:6685" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5610:5649" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="5677:6071" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="6302:6674" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="6321:6504" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="6523:6661" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="6820:6926" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="6852:6919" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="7092:7371" ph="..." />
+            <marker date="1542113660503" expanded="true" signature="7118:7356" ph="{&quot;easing&quot;: 'easeInOutCubic'...}" />
           </folding>
         </state>
       </provider>
@@ -644,8 +587,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_includes/footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="29" column="12" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
+        <state relative-caret-position="534">
+          <caret line="27" column="116" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
