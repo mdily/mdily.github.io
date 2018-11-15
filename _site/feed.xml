@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4001/</link>
     <atom:link href="http://localhost:4001/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 15 Nov 2018 22:47:52 +0800</pubDate>
-    <lastBuildDate>Thu, 15 Nov 2018 22:47:52 +0800</lastBuildDate>
+    <pubDate>Thu, 15 Nov 2018 22:52:41 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Nov 2018 22:52:41 +0800</lastBuildDate>
     <generator>Jekyll v3.8.0</generator>
     
       <item>
@@ -58,6 +58,11 @@
 第一个循环：O(n)；第二个循环：O(n)；第三个循环：O(n)
 
 T(n) = O(n) * O(n) * O(n) = O(n^3)
+
+以上就是简单的程序复杂度分析……
+
+这是我的第一篇blog，共勉。
+
 </description>
         <pubDate>Thu, 15 Nov 2018 07:30:00 +0800</pubDate>
         <link>http://localhost:4001/2018/11/15/analysis-of-algorithms/</link>
