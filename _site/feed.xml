@@ -5,9 +5,72 @@
     <description></description>
     <link>http://localhost:4001/</link>
     <atom:link href="http://localhost:4001/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 13 Nov 2018 20:54:20 +0800</pubDate>
-    <lastBuildDate>Tue, 13 Nov 2018 20:54:20 +0800</lastBuildDate>
+    <pubDate>Thu, 15 Nov 2018 22:47:52 +0800</pubDate>
+    <lastBuildDate>Thu, 15 Nov 2018 22:47:52 +0800</lastBuildDate>
     <generator>Jekyll v3.8.0</generator>
+    
+      <item>
+        <title>浅谈算法分析-算法复杂度</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#算法复杂度&quot; id=&quot;markdown-toc-算法复杂度&quot;&gt;算法复杂度&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#基本程序复杂度分析&quot; id=&quot;markdown-toc-基本程序复杂度分析&quot;&gt;基本程序复杂度分析&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+《数据结构与算法 Python语言描述》算法分析笔记
+
+&lt;h2 id=&quot;算法复杂度&quot;&gt;算法复杂度&lt;/h2&gt;
+
+常见的复杂度函数：O(1), O(log n), O(n), O(n log n), O(n^2), O(n^3), O(2^n)
+
+&lt;img src=&quot;http://i.imgur.com/LpD7WBD.png&quot; alt=&quot;image-O(g(n))&quot; /&gt;
+
+从上图可以看到，算法复杂度函数&lt;strong&gt;由简单到复杂&lt;/strong&gt;排序：O(1) &amp;lt; O(log n) &amp;lt; O(n) &amp;lt; O(n log n) &amp;lt; O(n^2) &amp;lt; O(n^3) &amp;lt; O(2^n)；复杂度越高，其实施的代价随着规模的增大而增长的速度就越快。
+
+&lt;h3 id=&quot;基本程序复杂度分析&quot;&gt;基本程序复杂度分析&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    基本操作：O(1)，例如基本的复赋值语句。
+  &lt;/li&gt;
+  &lt;li&gt;
+    加法规则（顺序结构）：T(n) = T1(n) + T2(n) = O(T1(n)) + O(T2(n)) = O(max(T1(n), T2(n)))，即取的是复杂度较高的一个程序。
+  &lt;/li&gt;
+  &lt;li&gt;
+    乘法规则（循环结构）：T(n) = T1(n) * T2(n) = O(T1(n)) * O(T2(n)) = O(T1(n) * T2(n))，循环体将执行T1(n)次，每次执行需要T2(n)时间。
+  &lt;/li&gt;
+  &lt;li&gt;
+    取最大规则（分支结构）：T(n) = O(max(T1(n), T2(n)))
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+看一个简单的实例：
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;m2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;][&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+第一个循环：O(n)；第二个循环：O(n)；第三个循环：O(n)
+
+T(n) = O(n) * O(n) * O(n) = O(n^3)
+</description>
+        <pubDate>Thu, 15 Nov 2018 07:30:00 +0800</pubDate>
+        <link>http://localhost:4001/2018/11/15/analysis-of-algorithms/</link>
+        <guid isPermaLink="true">http://localhost:4001/2018/11/15/analysis-of-algorithms/</guid>
+        
+        <category>algorithms</category>
+        
+        <category>python</category>
+        
+        
+        <category>Algorithms</category>
+        
+      </item>
     
   </channel>
 </rss>

@@ -121,6 +121,113 @@
         <hr>
         <ul>
             
+              <li>
+                <h2>
+                  <a class="post-link" href="/2018/11/15/analysis-of-algorithms/">浅谈算法分析-算法复杂度</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-11-15
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Algorithms" title="Category: Algorithms" rel="category">Algorithms</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#algorithms" title="Tag: algorithms" rel="tag">algorithms</a>&nbsp;
+    
+        <a href="/tag/#python" title="Tag: python" rel="tag">python</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#算法复杂度" id="markdown-toc-算法复杂度">算法复杂度</a>    <ul>
+      <li><a href="#基本程序复杂度分析" id="markdown-toc-基本程序复杂度分析">基本程序复杂度分析</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>《数据结构与算法 Python语言描述》算法分析笔记</p>
+
+<h2 id="算法复杂度">算法复杂度</h2>
+
+<p>常见的复杂度函数：O(1), O(log n), O(n), O(n log n), O(n^2), O(n^3), O(2^n)</p>
+
+<p><img src="http://i.imgur.com/LpD7WBD.png" alt="image-O(g(n))" /></p>
+
+<p>从上图可以看到，算法复杂度函数<strong>由简单到复杂</strong>排序：O(1) &lt; O(log n) &lt; O(n) &lt; O(n log n) &lt; O(n^2) &lt; O(n^3) &lt; O(2^n)；复杂度越高，其实施的代价随着规模的增大而增长的速度就越快。</p>
+
+<h3 id="基本程序复杂度分析">基本程序复杂度分析</h3>
+
+<ul>
+  <li>
+    <p>基本操作：O(1)，例如基本的复赋值语句。</p>
+  </li>
+  <li>
+    <p>加法规则（顺序结构）：T(n) = T1(n) + T2(n) = O(T1(n)) + O(T2(n)) = O(max(T1(n), T2(n)))，即取的是复杂度较高的一个程序。</p>
+  </li>
+  <li>
+    <p>乘法规则（循环结构）：T(n) = T1(n) * T2(n) = O(T1(n)) * O(T2(n)) = O(T1(n) * T2(n))，循环体将执行T1(n)次，每次执行需要T2(n)时间。</p>
+  </li>
+  <li>
+    <p>取最大规则（分支结构）：T(n) = O(max(T1(n), T2(n)))</p>
+  </li>
+</ul>
+
+<p>看一个简单的实例：</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">m1</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">m2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+        <span class="n">m</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span>
+</code></pre></div></div>
+
+<p>第一个循环：O(n)；第二个循环：O(n)；第三个循环：O(n)</p>
+
+<p>T(n) = O(n) * O(n) * O(n) = O(n^3)</p>
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2018/11/15/analysis-of-algorithms/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
         </ul>
 
 
@@ -131,7 +238,7 @@
             <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
             <span class="previous disable"><i class="fa fa-angle-left"></i></span>
           
-          <span class="page_number ">/</span>
+          <span class="page_number ">1/1</span>
           
             <span class="next disable"><i class="fa fa-angle-right"></i></span>
             <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
@@ -148,6 +255,8 @@
                 </div>
                 <ul class="content-ul" recent>
                     
+                        <li><a href="/2018/11/15/analysis-of-algorithms/">浅谈算法分析-算法复杂度</a></li>
+                    
                 </ul>
             </div>
 
@@ -158,6 +267,15 @@
                     Categories
                 </div>
                 <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#Algorithms" class="categories-list-item" cate="Algorithms">
+                            <span class="name">
+                                Algorithms
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
                     
                 </ul>
             </div>
@@ -175,6 +293,20 @@
 
                     
 
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#algorithms" style="font-size: 9pt; color: #999;">algorithms</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#python" style="font-size: 9pt; color: #999;">python</a>
                     
                 </div>
             </div>
