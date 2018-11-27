@@ -45,11 +45,12 @@ tags: linux daemon centos
 
 * 通过service命令启动
 
-    service [service name] {start|stop|status|restart|condrestart}
+        service [service name] {start|stop|status|restart|condrestart}
 
         service syslog restart    重新启动syslog这个服务
+        
 
-    service --status-all   显示目前系统上的所有服务状态
+        service --status-all   显示目前系统上的所有服务状态
 
 ### 服务的防火墙管理 xinetd，TCP Wrappers
 
