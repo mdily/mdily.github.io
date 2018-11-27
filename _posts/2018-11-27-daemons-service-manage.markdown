@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "简单系统服务"
+title:  "简单认识系统服务"
 date:   2018-11-27 20:30:00
 categories: Linux
 tags: linux daemon centos
@@ -48,7 +48,7 @@ tags: linux daemon centos
         service [service name] {start|stop|status|restart|condrestart}
 
         service syslog restart    重新启动syslog这个服务
-        
+
 
         service --status-all   显示目前系统上的所有服务状态
 
