@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tags</title>
-    <meta name="description" content="">
+    <title>浅谈Linux程序管理</title>
+    <meta name="description" content="  进程查看  进程的管理  系统资源的查看  网络管理进程查看进程查看常见的命令有：ps，top      ps：将某个时间点的进程运行情况选取出来      ps aux  &lt;== 查看系统所有进程数据      ps aux | grep `service name`   &lt;== 显示具体某个服...">
 
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
     <link rel="stylesheet" href="/css/main.css ">
-    <link rel="canonical" href="http://localhost:4001/tag/">
+    <link rel="canonical" href="http://localhost:4001/2018/11/26/process-manage/">
     <link rel="alternate" type="application/rss+xml" title="mdily的博客" href="http://localhost:4001/feed.xml ">
 
 
@@ -65,8 +65,8 @@
                     
                     <li>
                         
-                        <a class="active" href="/tag/">
-                            
+                        <a href="/tag/">
+                        
                             <i class="fa fa-tags"></i>Tags
                         </a>
                     </li>
@@ -114,227 +114,205 @@
 </header>
 
 
-        <div class="page clearfix">
+        <div class="page clearfix" post>
     <div class="left">
-        <h1>Tags</h1>
+        <h1>浅谈Linux程序管理</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2018-11-26
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+            <div class="label-card">
+                <p><i class="fa fa-eye fa-x"></i><span id="busuanzi_value_page_pv"></span></p>
+            </div>
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Linux" title="Category: Linux" rel="category">Linux</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#linux" title="Tag: linux" rel="tag">linux</a-->
+        <a href="/tag/#linux" title="Tag: linux" rel="tag">linux</a>&nbsp;
+    
+        <!--a href="/tag/#process" title="Tag: process" rel="tag">process</a-->
+        <a href="/tag/#process" title="Tag: process" rel="tag">process</a>&nbsp;
+    
+        <!--a href="/tag/#centos" title="Tag: centos" rel="tag">centos</a-->
+        <a href="/tag/#centos" title="Tag: centos" rel="tag">centos</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
         <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#进程查看" id="markdown-toc-进程查看">进程查看</a></li>
+  <li><a href="#进程的管理" id="markdown-toc-进程的管理">进程的管理</a></li>
+  <li><a href="#系统资源的查看" id="markdown-toc-系统资源的查看">系统资源的查看</a></li>
+  <li><a href="#网络管理" id="markdown-toc-网络管理">网络管理</a></li>
+</ul>
+
+<h3 id="进程查看">进程查看</h3>
+
+<p>进程查看常见的命令有：ps，top</p>
+
+<ul>
+  <li>
+    <p>ps：将某个时间点的进程运行情况选取出来</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ps aux  &lt;== 查看系统所有进程数据
+    
+  ps aux | grep `service name`   &lt;== 显示具体某个服务的进程信息
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>top： 动态查询进程的变化</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  top   &lt;==  查看所有进程的变化情况
+    
+  top -d `TIME` -p `PID`   &lt;== `TIME`秒刷新一次只查看进程ID`PID`的进程
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="进程的管理">进程的管理</h3>
+
+<p>进程管理的命令：kill，killall</p>
+
+<ul>
+  <li>
+    <p>kill：通过PID管理进程 <code class="highlighter-rouge">kill -signal PID</code></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  kill -9 PID  &lt;== 强制中断一个进程的进行
+    
+  kill -1 PID  &lt;== 启动被终止的进程
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>killall：通过进程名称管理进程 <code class="highlighter-rouge">killall -signal [command name]</code></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 比如：killall -9 httpd   强制终于所有以httpd启动的进程
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="系统资源的查看">系统资源的查看</h3>
+
+<ul>
+  <li>
+    <p>查看内存使用情况：free</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  free -m  &lt;== 查看内存使用情况，使用单位MB
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>查看系统与内核信息：uname</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  uname -a  &lt;== 输出系统的基本信息
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>查看CUP使用情况：vmstat</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  vmstat 1 3  &lt;== 统计目前主机CPU状态，每秒一次，共3次
+    
+  vmstat -d &lt;== 磁盘的读写状态
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="网络管理">网络管理</h3>
+
+<p>网络管理命令：netstat</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>netstat -[atunlp]
+
+    -a: 将系统上所有的连接、监听、Socket数据都列出来
+    -t: 列出所有tcp网络数据包
+    -u: 列出所有udp网络数据包
+    -n: 端口号
+    -l: 正在监听的网络
+    -p: 进程PID
+</code></pre></div></div>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+            
         
         
 
-        <ul>
+        <div class="post-recent">
+    <div class="pre">
         
-          <h2 id="algorithms">algorithms</h2>
-          
-            <li>
-                <time>
-                2018-11-15 Thu.
-                </time>
-                <a class="title" href="/2018/11/15/analysis-of-algorithms/">浅谈算法分析-算法复杂度</a>
-
-                
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#Algorithms" title="Category: Algorithms" rel="category">Algorithms</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#algorithms" title="Tag: algorithms" rel="tag">algorithms</a>&nbsp;
-    
-        <a href="/tag/#python" title="Tag: python" rel="tag">python</a>
-    
-  
-
-</span>
-
-            </li>
-          
+        <p><strong>上一篇</strong> <a href="/2018/11/15/analysis-of-algorithms/">浅谈算法分析-算法复杂度</a></p>
         
-          <h2 id="centos">centos</h2>
-          
-            <li>
-                <time>
-                2018-11-26 Mon.
-                </time>
-                <a class="title" href="/2018/11/26/process-manage/">浅谈Linux程序管理</a>
+    </div>
+    <div class="nex">
 
-                
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#Linux" title="Category: Linux" rel="category">Linux</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#linux" title="Tag: linux" rel="tag">linux</a>&nbsp;
-    
-        <a href="/tag/#process" title="Tag: process" rel="tag">process</a>&nbsp;
-    
-        <a href="/tag/#centos" title="Tag: centos" rel="tag">centos</a>
-    
-  
-
-</span>
-
-            </li>
-          
         
-          <h2 id="linux">linux</h2>
-          
-            <li>
-                <time>
-                2018-11-26 Mon.
-                </time>
-                <a class="title" href="/2018/11/26/process-manage/">浅谈Linux程序管理</a>
-
-                
+    </div>
+</div>
 
 
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#Linux" title="Category: Linux" rel="category">Linux</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#linux" title="Tag: linux" rel="tag">linux</a>&nbsp;
-    
-        <a href="/tag/#process" title="Tag: process" rel="tag">process</a>&nbsp;
-    
-        <a href="/tag/#centos" title="Tag: centos" rel="tag">centos</a>
-    
-  
-
-</span>
-
-            </li>
-          
+        <h2 id="comments">Comments</h2>
         
-          <h2 id="process">process</h2>
-          
-            <li>
-                <time>
-                2018-11-26 Mon.
-                </time>
-                <a class="title" href="/2018/11/26/process-manage/">浅谈Linux程序管理</a>
-
-                
 
 
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#Linux" title="Category: Linux" rel="category">Linux</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
 
 
-                
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#linux" title="Tag: linux" rel="tag">linux</a>&nbsp;
-    
-        <a href="/tag/#process" title="Tag: process" rel="tag">process</a>&nbsp;
-    
-        <a href="/tag/#centos" title="Tag: centos" rel="tag">centos</a>
-    
-  
-
-</span>
-
-            </li>
-          
-        
-          <h2 id="python">python</h2>
-          
-            <li>
-                <time>
-                2018-11-15 Thu.
-                </time>
-                <a class="title" href="/2018/11/15/analysis-of-algorithms/">浅谈算法分析-算法复杂度</a>
-
-                
-
-
-<!-- <span class="point">•</span> -->
-<span class="categories">
-  <i class="fa fa-th-list"></i>
-  
-    
-        <a href="/category/#Algorithms" title="Category: Algorithms" rel="category">Algorithms</a>
-    
-  
-
-  <!-- <span class="point">•</span> -->
-</span>
-
-
-                
-<!-- <span class="point">•</span> -->
-<span class="pageTag">
-  <i class="fa fa-tags"></i>
-  
-    
-        <a href="/tag/#algorithms" title="Tag: algorithms" rel="tag">algorithms</a>&nbsp;
-    
-        <a href="/tag/#python" title="Tag: python" rel="tag">python</a>
-    
-  
-
-</span>
-
-            </li>
-          
-        
-        </ul>
 
     </div>
     <button class="anchor"><i class="fa fa-anchor"></i></button>
@@ -348,37 +326,7 @@
                 </div>
                 <ul id="content-side" class="content-ul">
                     
-                    <li>
-                        <a data-scroll href="#algorithms">
-                            algorithms (1)
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a data-scroll href="#centos">
-                            centos (1)
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a data-scroll href="#linux">
-                            linux (1)
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a data-scroll href="#process">
-                            process (1)
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a data-scroll href="#python">
-                            python (1)
-                        </a>
-                    </li>
-                    
-
+                    <li><a href="#comments">Comments</a></li>
                 </ul>
             </div>
             <!-- 其他div框放到这里 -->
@@ -386,6 +334,17 @@
         </div>
     </div>
 </div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
 <script src="/js/pageContent.js " charset="utf-8"></script>
 
 

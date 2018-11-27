@@ -123,6 +123,158 @@
             
               <li>
                 <h2>
+                  <a class="post-link" href="/2018/11/26/process-manage/">浅谈Linux程序管理</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2018-11-26
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#Linux" title="Category: Linux" rel="category">Linux</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#linux" title="Tag: linux" rel="tag">linux</a>&nbsp;
+    
+        <a href="/tag/#process" title="Tag: process" rel="tag">process</a>&nbsp;
+    
+        <a href="/tag/#centos" title="Tag: centos" rel="tag">centos</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#进程查看" id="markdown-toc-进程查看">进程查看</a></li>
+  <li><a href="#进程的管理" id="markdown-toc-进程的管理">进程的管理</a></li>
+  <li><a href="#系统资源的查看" id="markdown-toc-系统资源的查看">系统资源的查看</a></li>
+  <li><a href="#网络管理" id="markdown-toc-网络管理">网络管理</a></li>
+</ul>
+
+<h3 id="进程查看">进程查看</h3>
+
+<p>进程查看常见的命令有：ps，top</p>
+
+<ul>
+  <li>
+    <p>ps：将某个时间点的进程运行情况选取出来</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ps aux  &lt;== 查看系统所有进程数据
+    
+  ps aux | grep `service name`   &lt;== 显示具体某个服务的进程信息
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>top： 动态查询进程的变化</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  top   &lt;==  查看所有进程的变化情况
+    
+  top -d `TIME` -p `PID`   &lt;== `TIME`秒刷新一次只查看进程ID`PID`的进程
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="进程的管理">进程的管理</h3>
+
+<p>进程管理的命令：kill，killall</p>
+
+<ul>
+  <li>
+    <p>kill：通过PID管理进程 <code class="highlighter-rouge">kill -signal PID</code></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  kill -9 PID  &lt;== 强制中断一个进程的进行
+    
+  kill -1 PID  &lt;== 启动被终止的进程
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>killall：通过进程名称管理进程 <code class="highlighter-rouge">killall -signal [command name]</code></p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 比如：killall -9 httpd   强制终于所有以httpd启动的进程
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="系统资源的查看">系统资源的查看</h3>
+
+<ul>
+  <li>
+    <p>查看内存使用情况：free</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  free -m  &lt;== 查看内存使用情况，使用单位MB
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>查看系统与内核信息：uname</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  uname -a  &lt;== 输出系统的基本信息
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>查看CUP使用情况：vmstat</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  vmstat 1 3  &lt;== 统计目前主机CPU状态，每秒一次，共3次
+    
+  vmstat -d &lt;== 磁盘的读写状态
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="网络管理">网络管理</h3>
+
+<p>网络管理命令：netstat</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>netstat -[atunlp]
+
+    -a: 将系统上所有的连接、监听、Socket数据都列出来
+    -t: 列出所有tcp网络数据包
+    -u: 列出所有udp网络数据包
+    -n: 端口号
+    -l: 正在监听的网络
+    -p: 进程PID
+</code></pre></div></div>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2018/11/26/process-manage/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
                   <a class="post-link" href="/2018/11/15/analysis-of-algorithms/">浅谈算法分析-算法复杂度</a>
                 </h2>
                 <div class="label">
@@ -260,6 +412,8 @@
                 </div>
                 <ul class="content-ul" recent>
                     
+                        <li><a href="/2018/11/26/process-manage/">浅谈Linux程序管理</a></li>
+                    
                         <li><a href="/2018/11/15/analysis-of-algorithms/">浅谈算法分析-算法复杂度</a></li>
                     
                 </ul>
@@ -277,6 +431,15 @@
                         <a href="/category/#Algorithms" class="categories-list-item" cate="Algorithms">
                             <span class="name">
                                 Algorithms
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#Linux" class="categories-list-item" cate="Linux">
+                            <span class="name">
+                                Linux
                             </span>
                             <span class="badge">1</span>
                         </a>
@@ -312,6 +475,27 @@
                       
                       
                       <a href="/tag/#python" style="font-size: 9pt; color: #999;">python</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#linux" style="font-size: 9pt; color: #999;">linux</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#process" style="font-size: 9pt; color: #999;">process</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#centos" style="font-size: 9pt; color: #999;">centos</a>
                     
                 </div>
             </div>
